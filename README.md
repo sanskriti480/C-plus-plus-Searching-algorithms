@@ -305,6 +305,21 @@ A **search algorithm** is a method used to **locate a specific element** within 
 5. In main, call class function and print result  
 6. Stop
 
+### 5. Sequential search
+
+1. Start
+2. Initialize an array with n elements.
+3. Read the target value to search from the user.
+4. Set a boolean flag found = false.
+5. For each index i from 0 to n-1:
+   - If array[i] == target:
+      - Print "Number found at index i".
+      - Set found = true.
+      - Exit the loop.
+6. If found is still false after the loop:
+   - Print "Number not found!".
+7. End
+
 ---
 
 
