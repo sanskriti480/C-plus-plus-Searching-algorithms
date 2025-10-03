@@ -26,6 +26,25 @@ To implement and analyze different **search algorithms** in C++, including:
 ---
 
 ## Theory
+---
+
+### Why C++ is More Efficient than C
+
+1. Object-Oriented Programming (OOP):
+   - Supports classes, inheritance, and polymorphism.
+   - Enables modular, reusable, and maintainable code.
+2. Standard Template Library (STL):
+   - Prebuilt, highly optimized containers (like vector, map) and algorithms (sort, search).
+   - Reduces coding effort and improves runtime efficiency.
+3. Better Memory Management:
+   - Features like RAII (Resource Acquisition Is Initialization) and smart pointers manage memory safely.
+   - Reduces manual memory handling errors common in C.
+4. Type Safety and Abstraction:
+   - Function overloading, templates, and references provide safer and faster operations.
+   - Allows writing generic code without sacrificing performance.
+5. High Performance:
+   - Combines the low-level control of C with high-level abstractions.
+   - Efficient for large-scale, complex applications where performance matters.
 
 ### What is a Search Algorithm?
 A **search algorithm** is a method used to **locate a specific element** within a data structure like an array, list, or database.  
