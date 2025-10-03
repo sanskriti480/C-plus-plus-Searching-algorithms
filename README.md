@@ -152,6 +152,42 @@ A **search algorithm** is a method used to **locate a specific element** within 
 4. If not found, print “Number not found”  
 5. Stop
 
++---------------------+
+|        Start        |
++---------------------+
+           |
+           v
++---------------------+
+| Read target value   |
++---------------------+
+           |
+           v
++---------------------+
+| Initialize i = 0    |
++---------------------+
+           |
+           v
++--------------------------+
+|      Is i < n ?          |
++--------------------------+
+       |Yes              |No
+       v                 v
++----------------+  +---------------------+
+| Is arr[i] ==   |  | Print "Not Found"   |
+| target ?       |  +---------------------+
++----------------+       |
+       |Yes              |No
+       v                 v
++---------------------------+
+| Print "Found at i"        |
++---------------------------+
+              |
+              v
++---------------------+
+|        Stop         |
++---------------------+
+
+
 ### 2. Binary Search (Sorted Array)
 1. Start  
 2. Read target value  
@@ -164,6 +200,52 @@ A **search algorithm** is a method used to **locate a specific element** within 
 5. If not found, print “Number not found”  
 6. Stop
 
++---------------------+
+|        Start        |
++---------------------+
+           |
+           v
++---------------------+
+| Read target value   |
++---------------------+
+           |
+           v
++---------------------+
+| Initialize low=0,   |
+| high=n-1            |
++---------------------+
+           |
+           v
++---------------------+
+| Is low <= high ?    |
++---------------------+
+       |No          |Yes
+       v             v
++----------------+  +---------------------+
+| Print "Not     |  | mid = (low+high)/2  |
+| Found"         |  +---------------------+
++----------------+          |
+                            v
+                +----------------------------+
+                | Is arr[mid] == target ?    |
+                +----------------------------+
+                |Yes                |No         
+                v                   v
+        +----------------+  +----------------------+
+        | Print "Found"  |  | Is arr[mid] < target?|
+        +----------------+  +----------------------+
+                                |Yes       |No
+                                v           v
+                         low = mid +1   high = mid -1
+                                |
+                                v
+                      Repeat low <= high?
+                                |
+                                v
+                              Stop
+
+
+
 ### 3. Linear Search (Repeated Data)
 1. Start  
 2. Read target value  
@@ -173,6 +255,44 @@ A **search algorithm** is a method used to **locate a specific element** within 
 5. If array of indices is empty, print “Not found”  
 6. Else, print all indices where target is found  
 7. Stop
+
++---------------------+
+|        Start        |
++---------------------+
+           |
+           v
++---------------------+
+| Read target value   |
++---------------------+
+           |
+           v
++---------------------+
+| Initialize i = 0    |
+| Initialize index[]  |
+| flag = 0            |
++---------------------+
+           |
+           v
++---------------------------+
+|       Is i < n ?          |
++---------------------------+
+       |No                 |Yes
+       v                   v
++----------------+     Check arr[i] == target?
+| Flag = 0 ?     |--Yes--> Store i in index[], flag++
++----------------+        |
+       |No                |No
+       v                  v
+ Print indices          i = i + 1
+ of all matches           |
+       |                  |
+       v                  v
+       +------------------+
+                |
+                v
+              Stop
+
+
 
 ### 4. Linear Search Using Class
 1. Define class with member function `linearsearch()`  
