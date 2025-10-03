@@ -151,7 +151,7 @@ A **search algorithm** is a method used to **locate a specific element** within 
    - If arr[i] == target, print index and stop  
 4. If not found, print “Number not found”  
 5. Stop
-
+```
 +---------------------+
 |        Start        |
 +---------------------+
@@ -187,6 +187,7 @@ A **search algorithm** is a method used to **locate a specific element** within 
 |        Stop         |
 +---------------------+
 
+```
 
 ### 2. Binary Search (Sorted Array)
 1. Start  
@@ -200,6 +201,7 @@ A **search algorithm** is a method used to **locate a specific element** within 
 5. If not found, print “Number not found”  
 6. Stop
 
+```
 +---------------------+
 |        Start        |
 +---------------------+
@@ -244,7 +246,7 @@ A **search algorithm** is a method used to **locate a specific element** within 
                                 v
                               Stop
 
-
+```
 
 ### 3. Linear Search (Repeated Data)
 1. Start  
@@ -256,6 +258,7 @@ A **search algorithm** is a method used to **locate a specific element** within 
 6. Else, print all indices where target is found  
 7. Stop
 
+```
 +---------------------+
 |        Start        |
 +---------------------+
@@ -292,7 +295,7 @@ A **search algorithm** is a method used to **locate a specific element** within 
                 v
               Stop
 
-
+```
 
 ### 4. Linear Search Using Class
 1. Define class with member function `linearsearch()`  
